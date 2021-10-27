@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithmen Visualisierer</title>
+    <link rel="stylesheet" href="AlgoStyle.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <h1> <b>Wähle einen Algorithmus aus, um die Balken zu sortieren</b></h1>
+            <button id="createArray" class="header">Andere Balken Generieren</button>
+          </li>
+          <li><button id="buttonBS" class="header">Bubble Sort</button></li>
+          <li>
+            <button id="SelectionS" class="header">Selection Sort</button>
+          </li>
+          <li>
+              <b>Schneller</b>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="header"
+                id="myRange"
+              />
+              <b>Langsamer</b>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="Balken"></div>
+    <script src="AlgoVisual.js"></script>
+  </body>
+</html>
